@@ -1,0 +1,148 @@
+body {
+  background-color: #212227;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-family: "Roboto Mono", sans-serif;
+  color: #BDD4E7;
+}
+
+header {
+  display: block;
+  font-size: 1.5em;
+  margin: 0.6em 0;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#cal_space {
+  display: flex-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#calendar {
+  width: 300px;
+  height: 270px;
+  margin: 10px;
+  background-color: #BCD8C1;
+  border-radius: 7px;
+}
+
+
+#month {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #4A7856;
+  border-radius: 7px 7px 0 0;
+}
+
+#calendar ul {
+  margin-bottom: 6px;
+  padding: 0;
+}
+
+#calendar ul li {
+  color: white;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0 ;
+  background-color: #4A7856;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 11%;
+  padding-bottom: 7px;
+  text-align: center;
+}
+#days {
+  margin: 0;
+}
+
+#days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 11%;
+  margin-bottom: 5px;
+}
+
+.myButton {
+  color: white;
+  background-color: transparent;
+  font-family: "Roboto Mono";
+  font-size:16px;
+  font-weight: 100;
+  text-align: center;
+  border: none;
+}
+
+.myButton[data-date] {
+  /* Define additional styles for buttons with the data-date attribute */
+  /* Adjust these styles to change the appearance of the selected dates */
+  color: white;
+}
+
+.name-button {
+  color: white;
+  background-color: transparent;
+  font-family: "Roboto Mono";
+  font-size:16px;
+  font-weight: 100;
+  text-align: center;
+  border: none;
+}
+
+#name_space button:hover {
+  color: #4A7856;
+}
+
+#name_space button:active {
+  color: #4A7856;
+}
+
+#name_space button:focus {
+  color: #4A7856;
+}
+
+
+#days li button:hover {
+  color: #ff392e;
+}
+
+.save-button {
+  color : green;
+  margin-top: 14px;
+  height: 40px;
+  width: 100px;
+}
+
+@media screen and (min-width: 767px) and (max-width:1023px) {
+  header {
+    padding: 14px 2%;
+    transition: .2s;
+  }
+  #cal_space {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+  #name_space {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
